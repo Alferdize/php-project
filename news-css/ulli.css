@@ -1,0 +1,24 @@
+.header2 ul{
+    list-style:none;
+    padding:0;
+}
+.header2 ul li{
+    float: left;
+}
+.header2 ul li:hover {
+    display: block;
+}
+
+.header2 ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    text-decoration: none;
+    width: 100px;
+    height: 3vh;
+    font-size: 16px;
+    font-family: Calibri;
+    transition: 0.9s;
+}
+

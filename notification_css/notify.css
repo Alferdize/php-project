@@ -1,0 +1,34 @@
+.notification{
+    background: white;
+    height: 70px;
+    width: 1920px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.image{
+    height: 70px;
+    width: 80px;
+}
+.image1{
+    height: 70px;
+    width: 80px;
+
+}
+.not_header{
+    height: 70px;
+    width: 1920px;
+    font-family: "Arial Black";
+    font-size: 32px;
+    background: wheat;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+}
+.user-name{
+    color: #333333;
+    font-size: 24px;
+}

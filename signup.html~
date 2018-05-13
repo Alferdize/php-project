@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--<script src="signup-js/signup.js"></script>!-->
+    <link href="login-css/index1.css" rel="stylesheet">
+    <link href="login-css/form.css" rel="stylesheet">
+    <script>
+
+        function check() {
+            return true;
+        }
+        function lname() {
+            if(f1.lastname.value == "")
+            {
+                alert("please enter your Last name")
+            }
+            else if(f1.Firstname.value == "")
+            {
+                alert("please enter your First name")
+            }
+            else
+                return true;
+        }
+        function cpwd() {
+            if(f1.PASSWORD.value != f1.CPASSWORD.value)
+            {
+                alert("Password and Confirm Password are not same")
+            }
+            else
+                    return true;
+        }
+        function pwd() {
+            var str = f1.PASSWORD.value;
+            if(f1.PASSWORD.value == "")
+            {
+                alert("Please enter the password")
+            }
+
+            else if(str.length < 6 && str.length > 0)
+            {
+                alert("Password should be greater than 6 character")
+            }
+            else
+                    return true;
+        }
+        function date() {
+            if (f1.DATE.value == ""){
+                alert("Please provide your birth date")
+            }
+            else
+                    return true;
+        }
+    </script>
+</head>
+<body>
+<div class="pf-container">
+    <div class="pf-sidebar-containner">
+        <div class="pf-sidebar">
+            </div>
+        </div>
+</div>
+        <form name="f1" method="post" action="submit.php">
+            <p style="font-family: sans-serif; font-size: 22px; color: white;padding: 0;">SignUp</p>
+            <input type="text" placeholder="First name" name="firstname"><br>
+            <input type="text" placeholder="last name" name="lastname" onblur="lname()"><br>
+            <input type="PASSWORD" placeholder="PASSWORD" name="PASSWORD" onblur="pwd()"><br>
+            <input type="PASSWORD" placeholder="CONFIRM PASSWORD" name="CPASSWORD" onblur="cpwd()"><br>
+            <input type="date" placeholder="BIRTH DATE" name="DATE" max="2000-01-02" onblur="date()"><br>
+            <input type="EMAIL" placeholder="Email_ID" name="emaiid" onblur="e_mail()"><br>
+            <input type="text" placeholder="COUNTRY" name="COUNTRY"><br>
+            GENDER<input type="radio" name="GENDER" value="male">&nbsp;&nbsp;<input type="radio" name="GENDER" value="female"><br>
+            <input type="submit" value="SUBMIT">&nbsp;&nbsp;<input type="reset" value="RESET">
+        </form>
+<div id="bottom">ghjiuy</div>
+</body>
+</html>

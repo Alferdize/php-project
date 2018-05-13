@@ -1,0 +1,57 @@
+.notf-body{
+    padding: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    height: 60px;
+    color: black;
+    background-color: white;
+    border-bottom: 3px solid silver;
+}
+.notf-image {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    background: white;
+    width: 350px;
+    height: 100px;
+    margin: 20px;
+    border: 3px solid silver;
+    padding: 0;
+}
+.notif-text{
+    font-size: 22px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-right: 400px;
+}
+.but{
+    margin-top: 20px;
+}
+.image1{
+    width: 150px;
+    height: 100px;
+    float:left;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+.butt{
+    width: 65px;
+    height: 25px;
+    color: #000022;
+    font-family: sans-serif;
+    font-size: 16px;
+    background: darkblue;
+    cursor: default;
+    left: 30px;
+}
+.button1{
+    width: 65px;
+    height: 25px;
+    font-family: sans-serif;
+    color: #000022;
+    font-size: 16px;
+    background: darkgray;
+    cursor: default;
+    left: 30px;
+}

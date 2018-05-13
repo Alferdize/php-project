@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script>
+function post()
+{
+var username = f1.file.value;
+var password = f1.post.value; 
+var url="home-php/home1.php?file="+username+ "&post" +password;
+xmlhttp=new XMLHttpRequest();
+
+ xmlhttp.open("GET",url,true);
+ xmlhttp.send(null);
+ xmlhttp.onreadystatechange=function()
+ {
+   //  alert(xmlhttp.readState)
+  if(xmlhttp.readyState == 4)
+  {
+
+   document.getElementByClass("post").innerHTML=xmlhttp.responseText;
+  }
+
+}
+ //xmlhttp.send(null);
+}
+function funct()
+{
+xmlhttp=new XMLHttpRequest();
+
+ xmlhttp.open("GET","home-php/home.php",true);
+ xmlhttp.send(null);
+ xmlhttp.onreadystatechange=function()
+ {
+   //  alert(xmlhttp.readState)
+  if(xmlhttp.readyState == 4)
+  {
+
+   document.getElementById("name").innerHTML=xmlhttp.responseText;
+  }
+
+}
+ //xmlhttp.send(null);
+}
+</script>
+<script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
+
+    <script>
+        $document.ready(function (){
+            $("#btn").hover(function () {
+                $(".new").addClass("red-red");
+            });
+            $("#btn").mouseleave(function () {
+                $(".new").addClass("red-red");
+            });
+        });
+    </script>
+    <link href="home/index.css" rel="stylesheet">
+    <link href="home/form.css" rel="stylesheet">
+    <link href="home/ulli.css" rel="stylesheet">
+    <link href="home/image.css" rel="stylesheet">
+    <link href="home/drop.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/y9/l/0,cross/x5j2iAbHgMk.css">
+    <link rel="stylesheet" href="home/file-style.css">
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+
+</head>
+<body onload="show()">
+<div class="container">
+    <div class="header-container">
+        <div class="header">
+            <div class="header1">
+            <form action="">
+                <input type="search" name="googlesearch">
+                <input type="submit">
+            </form>
+            </div>
+        <div class="header2">
+        <ul><li><a href="profile.html"><p id='name'></p></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="find-friends.html">Find-friends</a></li>
+                <li><a href="login.html">logout</a></li></ul>
+            </div>
+            </div>
+        </div>
+    <div class="main" align="center">
+        <div class="home-body">
+            <form action="home.html" method="get" style="margin:10px;" name=f2>
+                <div class="chat-form">
+                    <textarea  placeholder="Write The Things Of Your Mind" name="post"></textarea>
+                    <input type="file" id="btn1" name="file">
+                    <span class="next">
+    <button  class="fa fa-camera" aria-hidden="true">
+</button>Choose a file</span>
+                    <input type="submit" value="send" class="button" onclick="post()">
+                </div>
+            </form>
+<div class="post" style="background-color:white; color:black; padding:5px;">
+</div>
+        </div>
+        </div>
+</div>
+</body>
+</html>

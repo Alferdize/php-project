@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    border: 0px;
+}
+body{
+    background: #a2a39e;
+    link: white;
+}
+.header-container{
+    background: #f5ba1a;
+    width: 1900px;
+    height: 70px;
+}
+.header{
+    margin: 0px;
+    padding: 0px;
+    width: 1850px;
+    height: 70px;
+}
+.header1{
+    width: 1000px;
+    height: 60px;
+    position: absolute;
+}
+.header2{
+    margin: 0px;
+    padding: 0px;
+    width: 900px;
+    height: 69px;
+    float: right;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    text-align: center;
+    padding-left: 300px;
+}
+.profile-image{
+    width: 850px;
+}
+.image{
+    border: 4px solid green;
+}
+.home-body{
+    background: black;
+    width: 800px;
+    height: 100vh;
+}
+.chat-form{
+    margin-top: 20px;
+    align-items: left;
+
+}
+
+.chat-form .button{
+    width: 65px;
+    height: 40px;
+    color: #000022;
+    font-size: 22px;
+    background: lightcyan;
+    border: none;
+    border-radius: 3px;
+    margin: 0 10px;
+    box-shadow: 0 3px 0 #0eb2c1;
+    cursor: default;
+    left: 30px;
+}
+.chat-form button:hover{
+    background: #13c8d9;
+}

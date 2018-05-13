@@ -1,0 +1,63 @@
+form{
+    margin: 0;
+    margin-top: 0;
+    background-color: orangered;
+    float: right;
+    width: 30vw;
+    height: 69vh;
+    color: blue;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-top: 1vw;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    padding-bottom: 1vw;
+    margin-left: 3vw;
+}
+input{
+    height: 5vh;
+    background-color: black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+	color: white;
+    margin-left: 1vw;
+}
+input[placeholder]{
+    padding-left: 1vw;
+	color: white;
+}
+input[type="password"],input[type="text"],input[type="email"],input[type="date"]{
+    background-color: black;
+    height: 5vh;
+    width: 15vw;
+    margin: 0px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-left: 1vw;
+}
+.info{
+    height: 70vh;
+}
+input[type="submit"],input[type="reset"]{
+    background-color: black;
+    height: 5vh;
+    width:  6.2vw;
+    margin: 1vw;
+    border-radius: 5px;
+    text-align: center;
+}
+hr{
+    width: 20vw ;
+}
+input[type="radio"]{
+    height: 9vh;
+    width: 2vw;
+	border-radius:0px;
+	background-color: black;
+    margin: 0px;
+    margin-left: 1vw;
+}
+p{
+    font-weight: bolder;
+    font-size: 20px;
+}

@@ -1,0 +1,42 @@
+.slideshow-container{
+    width: 800px;
+    position: relative;
+}
+.slides{
+    display: none;
+}
+
+
+.prev,.next{
+    position: absolute;
+    top: 50%;
+    color: burlywood;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
+    border-radius:0 3px;
+    cursor: pointer;
+}
+.next{
+    right: 0;
+    border-radius: 3px;
+}
+.prev:hover,.next:hover{
+    background: rgba(0,0,0,0.8);
+}
+.dots{
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background: gray;
+    padding: 5px;
+    border-radius: 50%;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 0.2s;
+}
+@keyframes fade {
+    from{opacity: 0.3}
+    to{opacity: 1}
+}

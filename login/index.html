@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Title</title>
+    <style type="text/css">
+
+        .slideshow-container{
+            width: 100%;
+            height: 400px;
+            position: fixed;
+            background-color: palegoldenrod;
+            background-size: cover;
+        }
+        img{
+            width: 100vw;
+            height: 50vh;
+        }
+        .slides{
+            display: none;
+            width: 49vw;
+            height: 49vh;
+            position: static;
+        }
+        .prev,.next{
+            position:absolute;
+            top: 50%;
+            color: burlywood;
+            font-weight: bold;
+            padding: 1vw;
+            font-size: 18px;
+            border-radius:0 3px;
+            cursor: pointer;
+        }
+        .next{
+            right: 0;
+            border-radius: 0.3vw;
+        }
+        .prev:hover,.next:hover{
+            background: rgba(0,0,0,0.8);
+        }
+        .dots{
+            width: 1vw;
+            height: 1vw;
+            display: inline-block;
+            background: gray;
+            padding: .5vw;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .fade{
+            animation-name: fade;
+            animation-duration: 0.2s;
+        }
+        @keyframes fade {
+            from{opacity: 0.3}
+            to{opacity: 1}
+        }
+        .active,.dots:hover{
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+    <div class="slides fade">
+    <div><img src="vDy3sUb.jpg"></div>
+</div>
+    <div class="slides">
+        <div><img src="YnmrsIJ.jpg"></div>
+    </div>
+    <div class="slides">
+        <div><img src="index.jpg"></div>
+    </div>
+    <br>
+<a class="prev" onclick="plusIndex(-1)">&#10094</a>
+    <a class="next" onclick="plusIndex(+1)">&#10095</a>
+    <div style="text-align: center">
+        <span class="dots" onclick="currentslide(1)"></span>
+        <span class="dots" onclick="currentslide(2)"></span>
+        <span class="dots" onclick="currentslide(3)"></span>
+    </div>
+    </div>
+
+<script type="text/javascript">
+    var slideIndex = 1;
+    showImage(slideIndex);
+    function plusIndex(n) {
+        showImage(slideIndex += n);
+    }
+    function currentslide(n) {
+        showImage(slideIndex = n);
+
+    }
+    function showImage(n) {
+        var slide=document.getElementsByClassName("slides");
+        var dots=document.getElementsByClassName("dots")
+        if (n > slide.length){ slideIndex = 1;}
+        if (n < 1){ slideIndex = slide.length};
+        for (var i = 0; i < slide.length; i++)
+        {
+            slide[i].style.display = "none";
+            slide[slideIndex-1].style.display = "block";
+        }
+        for (var i=0 ; i < slide.length ; i++){
+            dots[i].className = dots[i].className.replace(" active","")
+        }
+        dots[slideIndex-1].className += " active";
+    }
+    auto()
+    function auto() {
+        var i;
+        var slide=document.getElementsByClassName("slides");
+        var dots=document.getElementsByClassName("dots");
+        if(slideIndex > slide.length){slideIndex = 1;}
+        for (var i = 0; i < slide.length; i++)
+        {
+            slide[i].style.display = "none";
+        };
+        slide[slideIndex-1].style.display = "block";
+        for (var i=0 ; i < slide.length ; i++){
+            dots[i].className = dots[i].className.replace(" active","")
+        }
+        dots[slideIndex-1].className += " active";
+
+        slideIndex++;
+        setTimeout(auto,3000);
+    }
+</script>
+</body>
+</html>

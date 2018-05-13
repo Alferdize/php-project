@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="login-css\index1.css" rel="stylesheet">
+    <link href="login-css\form.css" rel="stylesheet">
+    <script>
+
+        function check() {
+            return true;
+        }
+        function lname() {
+            if(f1.lastname.value == "")
+            {
+                alert("please enter your Last name")
+            }
+            else if(f1.Firstname.value == "")
+            {
+                alert("please enter your First name")
+            }
+            else
+                return true;
+        }
+        function cpwd() {
+            if(f1.PASSWORD.value != f1.CPASSWORD.value)
+            {
+                alert("Password and Confirm Password are not same")
+            }
+            else
+                    return true;
+        }
+        function pwd() {
+            var str = f1.PASSWORD.value;
+            if(f1.PASSWORD.value == "")
+            {
+                alert("Please enter the password")
+            }
+
+            else if(str.length < 6 && str.length > 0)
+            {
+                alert("Password should be greater than 6 character")
+            }
+            else
+                    return true;
+        }
+        function date() {
+            if (f1.DATE.value == ""){
+                alert("Please provide your birth date")
+            }
+            else
+                    return true;
+        }
+    </script>
+</head>
+<body>
+<div class="pf-container">
+    <div class="pf-sidebar-containner">
+        <div class="pf-sidebar">
+            </div>
+        </div>
+</div>
+<div class="middle">
+    <div class="middle1">
+        <iframe src="greensock-animated-slideshow-wip\index.html" height="100%" width="100%" scrolling="no" frameborder="0">
+        </iframe>
+        </div>
+    <div class="middle2">
+        <form name="f1" onsubmit="mail()" action="conf.php" method="post">
+            <p style="font-family: sans-serif; font-size: 22px;padding: 0;">Sign Up</p>
+            <input type="text" placeholder="First name" name="Firstname"><br>
+            <input type="text" placeholder="last name" name="lastname" onblur="lname()"><br>
+            <input type="PASSWORD" placeholder="PASSWORD" name="PASSWORD" onblur="pwd()"><br>
+            <input type="PASSWORD" placeholder="CONFIRM PASSWORD" name="CPASSWORD" onblur="cpwd()"><br>
+            <input type="date" placeholder="BIRTH DATE" name="DATE" max="2000-01-02" onblur="date()"><br>
+            <input type="text" placeholder="Email_ID" name="Email" onblur="e_mail()"><br>
+            <input type="text" placeholder="COUNTRY" name="COUNTRY"><br>
+            GENDER<input type="radio" name="GENDER" value="male">&nbsp;&nbsp;<input type="radio" name="GENDER" value="female"><br>
+            <input type="submit" value="SUBMIT">&nbsp;&nbsp;<input type="reset" value="RESET">
+        </form>
+    </div>
+</div>
+<div class="bottom">
+<a href="login1.html" class="back">&#9664;</a></div>
+</body>
+</html>

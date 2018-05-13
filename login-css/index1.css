@@ -1,0 +1,77 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+a{
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+.pf-sidebar{
+    background-color: gray;
+}
+.pf-grid-item{
+    background-color: gray;
+    padding: 3vw;
+}
+.pf-container{
+    display: flex;
+}
+.pf-sidebar-containner
+{
+    flex: 99vw;
+    height: 20vh;
+}
+.pf-content{
+    padding: 3vw;
+}
+.pf-grid-item{
+    margin-bottom: 1rem;
+}
+.pf-sidebar{
+    position: fixed;
+    height: 20vh;
+    width: 99vw;
+}
+.middle{
+    display: flex;
+    width: 99vw;
+    height: 70vh;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+}
+.middle1{
+    display: flex;
+    height: 69vh;
+    width: 65vw;
+}
+.middle2{
+    display: flex;
+    width: 30vw;
+    height: 69vh;
+}
+.bottom{
+    display: flex;
+	height: 6vh;
+    width: 99vw;
+    background-color: gray;
+}
+.back{
+	width: 40px;
+	height: 45px;
+	color: white;
+	background-color:orangered;
+	font-size:20px;
+	padding:5px;
+	}

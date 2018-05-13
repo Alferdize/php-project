@@ -1,0 +1,60 @@
+form{
+    margin: 0;
+    margin-top: 0;
+    background-color: orangered;
+    float: right;
+    width: 300px;
+    height: 600px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+input{
+    height: 50px;
+    background-color: white;
+    width: 150px;
+    margin: 0px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+input[placeholder]{
+    padding-left: 10px;
+}
+input[type="password"]{
+    background-color: black;
+    height: 50px;
+    width: 150px;
+    margin: 0px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.info{
+    height: 700px;
+}
+input[type="submit"],input[type="reset"]{
+    background-color: black;
+    height: 50px;
+    width:  62px;
+    margin: 10px;
+    border-radius: 5px;
+    color: darkgray;
+    text-align: center;
+}
+hr{
+    width: 200px ;
+}
+input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+}
+p{
+    font-weight: bolder;
+    font-size: 20px;
+}

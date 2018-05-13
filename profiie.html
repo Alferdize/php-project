@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title></title>
+    <link href="home/index.css" rel="stylesheet">
+    <link href="home/form.css" rel="stylesheet">
+    <link href="home/ulli.css" rel="stylesheet">
+    <link href="home/image.css" rel="stylesheet">
+    <link href="home/drop.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="header-container">
+        <div class="header">
+            <div class="header1">
+                <form action="">
+                    <input type="search" name="googlesearch">
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="header2">
+                <ul><li><a href="profie.html"><?php echo $_SESSION['name'];?></a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="find-friends.html">Find-friends</a></li>
+                    <li><a href="login.html">logout</a></li></ul>
+            </div>
+        </div>
+    </div>
+    <div class="main" align="center">
+        <div class="profile-image">
+            <button style="position: absolute;margin: 20px"  class="fa fa-camera" aria-hidden="true"></button>
+            <img src="http://www.myrkothum.com/wp-content/uploads/2008/09/psychological-clock-time.jpg" height="360px" width="840px" class="image">
+
+            <div id="container">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="profile.html">Timeline</a>
+                            <!-- First Tier Drop Down -->
+
+                        </li>
+                        <li><a href="news.html">Events</a></li>
+                        <li><a href="friends.html">Friends</a></li>
+                        <li><a href="messages.html">Messages</a></li>
+                        <li><a href="#">More</a>
+                            <!-- First Tier Drop Down -->
+                            <ul>
+                                <li><a href="photos.html">Photos</a></li>
+                                <li><a href="videos.html">Videos</a></li>
+                                <li><a href="news.html">News</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="home-body">
+            <form action="#">
+                <div class="input-file-container">
+                    <input class="input-file" id="my-file" type="file">
+                    <label tabindex="0" for="my-file" class="input-file-trigger">Select a file...</label>
+                </div>
+                <p class="file-return"></p>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+.body-container{
+    background-color: white;
+    width: 90%;
+    height: 820px;
+    padding: 40px;
+    margin-left: 35px;
+}
+.body-main{
+    padding: 10px;
+    width: 100%;
+    height: 90%;
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+.images-folder{
+    font-size: 32px;
+    color: black;
+    font-family: sans-serif;
+    border-bottom: 5px solid silver;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+.images{
+    width: 390px;
+    height: 390px;
+    margin-bottom: 10px;
+}

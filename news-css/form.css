@@ -1,0 +1,22 @@
+input{
+    height: 3vh;
+    background-color: aqua;
+    width: 39vw;
+    margin: 0px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-left: 1vw;
+    font-size: 1vw;
+}
+input[placeholder]{
+    padding-left: 1vw;
+}
+input[type="submit"],input[type="reset"]{
+    background-color: aqua;
+    height: 3vh;
+    width:  7vw;
+    margin: 1vw;
+    border-radius: 5px;
+    color: darkgray;
+    text-align: center;
+}

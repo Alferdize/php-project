@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/videostyle.css" rel="stylesheet">
+    <link href="css/drop.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+</head>
+<body>
+<div class="background">
+    <video id="bg_video" preload="auto" autoplay="true" loop="loop" muted="muted">
+        <source src="video/The_History_of_Social_Media__Communication___Connection.mp4" type="video/mp4">
+    </video>
+</div>
+<div class="info">
+    <form name="f1" method="post" action="login1.php">
+        LOGIN<br><br>
+        <input type="text" placeholder=Username name="username"><br><br>
+        <input type="password" placeholder="Password" name="password"><br><br>
+        <center><input type="submit" value="SUBMIT"></center>
+        <hr>
+        <div class="login">
+            <p><a href="signup.html"> Not yet signup</a></p>
+        </div>
+    </form>
+</div>
+<div class="down">
+</div>
+</body>
+</html>
